@@ -1,6 +1,8 @@
 deploy-pages:
   image: node:22-alpine
   stage: deploy
+  tags:
+    - docker
   cache:
     key:
       files:
